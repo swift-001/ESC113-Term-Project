@@ -1,3 +1,6 @@
+clc;
+clear all;
+
 n = 21;          % Number of points
 h = 0.1;         % Step size
 x = linspace(0,2,n);   % Generate evenly spaced points between 0 and 2
@@ -23,6 +26,9 @@ end
 Temperature(21) = 2.38144;   % Set the Temperature at point B to 2.38144
 
 plot(x, Temperature, '-o','MarkerEdgeColor','r')   % Plot Temperature against x
+xlabel('x');
+ylabel('Temperature');
+
 
 % Define the 'a' function
 function y = a(x)
